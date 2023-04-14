@@ -40,6 +40,7 @@ dependencies:
   material_design_icons_flutter: ^6.0.7096
   firebase_auth: ^4.4.0
   keyboard_visibility: ^0.5.6
+  google_sign_in: ^6.1.0
 
 dev_dependencies:
   flutter_test:

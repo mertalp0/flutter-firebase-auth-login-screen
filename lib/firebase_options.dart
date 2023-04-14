@@ -25,7 +25,10 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -45,17 +48,17 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'AIzaSyBvrQH2Lug-wUYHM6cRpzSbHdq-nUDdM-I',
-    appId: '1:618974683566:web:f8db92cfd2259b1853683f',
+    appId: '1:618974683566:web:773abf141f9d2f3353683f',
     messagingSenderId: '618974683566',
     projectId: 'loginscreen-bfad5',
     authDomain: 'loginscreen-bfad5.firebaseapp.com',
     storageBucket: 'loginscreen-bfad5.appspot.com',
-    measurementId: 'G-GGMC45XET8',
+    measurementId: 'G-RNJHQZL83X',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyDgFjP3X7VIsM_14oCoTL7nJqmuFp3Up6o',
-    appId: '1:618974683566:android:6ad1ef4c7fff6a7e53683f',
+    appId: '1:618974683566:android:9dc066779099446d53683f',
     messagingSenderId: '618974683566',
     projectId: 'loginscreen-bfad5',
     storageBucket: 'loginscreen-bfad5.appspot.com',
@@ -63,20 +66,11 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyDQk3Gjj9H5GaKK_Zg0qdUP2Z-I9jmkROc',
-    appId: '1:618974683566:ios:f3dd0b43300f26b153683f',
+    appId: '1:618974683566:ios:66ba024cfaeec91f53683f',
     messagingSenderId: '618974683566',
     projectId: 'loginscreen-bfad5',
     storageBucket: 'loginscreen-bfad5.appspot.com',
-    iosClientId: '618974683566-5i9r2f3l7gceqrb2dmto967d272oucud.apps.googleusercontent.com',
-    iosBundleId: 'com.example.flutterLoginScreen',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDQk3Gjj9H5GaKK_Zg0qdUP2Z-I9jmkROc',
-    appId: '1:618974683566:ios:f3dd0b43300f26b153683f',
-    messagingSenderId: '618974683566',
-    projectId: 'loginscreen-bfad5',
-    storageBucket: 'loginscreen-bfad5.appspot.com',
+    androidClientId: '618974683566-2ui7k8lksoc09j2vvp7un2dv09724io9.apps.googleusercontent.com',
     iosClientId: '618974683566-5i9r2f3l7gceqrb2dmto967d272oucud.apps.googleusercontent.com',
     iosBundleId: 'com.example.flutterLoginScreen',
   );
